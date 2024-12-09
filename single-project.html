@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HouseCraft</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/main.min.js"></script>
+
+</head>
+
+<body class="body">
+
+    <header class="header" style="background-image: url('./img/hero-bg.jpg');
+    background-image: image-set(
+      './img/hero-bg.avif' type('image/avif'),
+      './img/hero-bg.webp' type('image/webp')
+    );">
+
+        <div class="container">
+            <div class="header__top">
+                <div class="header__top-wrapper">
+                    <a class="header__logo" href="index.html">
+                        Logo
+                    </a>
+                    <div class="header__contacts">
+                        <a class="header__contact" href="#" target="_blank">написать в <span
+                                class="header__contact-span">whatsapp</span></a>
+                        <a class="header__contact" href="#" target="_blank">написать в <span
+                                class="header__contact-span">telegram</span></a>
+                    </div>
+                    <a class="header__tel" href="tel:+79999999999">+7 999 999-99-99</a>
+                    <button class="burger" aria-label="Открыть меню">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </button>
+                    <div class="mob-nav"></div>
+                </div>
+
+            </div>
+            <div class="header__bottom">
+                <div class="header__bottom-wrapper">
+                    <nav class="header__nav">
+                        <ul class="header__items">
+                            <li class="header__item">
+                                <a class="header__item-link" href="projects.html">
+                                    Проекты
+                                    <svg class="header__item-link-svg">
+                                        <use xlink:href="img/sprite.svg#header-arrow"></use>
+                                    </svg>
+                                </a>
+                                <ul class="header__submenu">
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="single-project.html">Проект 1</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="single-project2.html">Проект 2</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Проект 3</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Проект 4</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Проект 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="services.html">
+                                    Услуги
+                                    <svg class="header__item-link-svg">
+                                        <use xlink:href="img/sprite.svg#header-arrow"></use>
+                                    </svg>
+                                </a>
+                                <ul class="header__submenu">
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 1</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 2</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 3</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 4</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="works.html">Наши работы</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="about.html">О нас</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="news.html">Новости</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link popup" href="#"  data-graph-animation="fadeInUp" data-graph-path="questions">Вакансии</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="header__personal" href="lk.html">
+                        <svg class="header__personal-img">
+                            <use xlink:href="img/sprite.svg#lk"></use>
+                        </svg>
+                        <span class="header__personal-text">Личный кабинет</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+  <main class="main">
+    <section class="project">
+      <div class="container">
+        <div class="project__wrapper">
+          <div class="project__left">
+            <h1 class="project__title subtitle">Проект 1</h1>
+            <p class="project__price">От 3 540 000 ₽ </p>
+            <p class="project__descr">
+              В цену уже включены: фундамент, доставка и монтаж
+            </p>
+          </div>
+          <div class="project__right">
+            <a class="project__presentation btn" href="#">Получить презентацию</a>
+          </div>
+        </div>
+      </div>
+
+      <section class="project__swiper swiper">
+        <div class="project__swiper-wrapper swiper-wrapper">
+          <div class="project__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="img/single-project.avif" type="image/avif">
+              <source srcset="img/single-project.webp" type="image/webp">
+              <img class="project__swiper-img" src="img/single-project.jpg" alt="">
+            </picture>
+          </div>
+          <div class="project__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="img/single-project2.avif" type="image/avif">
+              <source srcset="img/single-project2.webp" type="image/webp">
+              <img class="project__swiper-img" src="img/single-project2.jpg" alt="">
+            </picture>
+          </div>
+          <div class="project__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="img/single-project3.avif" type="image/avif">
+              <source srcset="img/single-project3.webp" type="image/webp">
+              <img class="project__swiper-img" src="img/single-project3.jpg" alt="">
+            </picture>
+          </div>
+          <div class="project__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="img/single-project.avif" type="image/avif">
+              <source srcset="img/single-project.webp" type="image/webp">
+              <img class="project__swiper-img" src="img/single-project.jpg" alt="">
+            </picture>
+          </div>
+          <div class="project__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="img/single-project2.avif" type="image/avif">
+              <source srcset="img/single-project2.webp" type="image/webp">
+              <img class="project__swiper-img" src="img/single-project2.jpg" alt="">
+            </picture>
+          </div>
+          <div class="project__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="img/single-project3.avif" type="image/avif">
+              <source srcset="img/single-project3.webp" type="image/webp">
+              <img class="project__swiper-img" src="img/single-project3.jpg" alt="">
+            </picture>
+          </div>
+          <div class="project__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="img/single-project2.avif" type="image/avif">
+              <source srcset="img/single-project2.webp" type="image/webp">
+              <img class="project__swiper-img" src="img/single-project2.jpg" alt="">
+            </picture>
+          </div>
+          <div class="project__swiper-slide swiper-slide">
+            <picture>
+              <source srcset="img/single-project3.avif" type="image/avif">
+              <source srcset="img/single-project3.webp" type="image/webp">
+              <img class="project__swiper-img" src="img/single-project3.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="project__swiper-button-prev swiper-button-prev"></div>
+        <div class="project__swiper-button-next swiper-button-next"></div>
+      </section>
+
+      <section class="project__information">
+        <div class="container">
+          <div class="project__information-swiper swiper tabs">
+            <div class="tabs__swiper-wrapper swiper-wrapper">
+              <div class="tabs__swiper-slide swiper-slide">
+                <picture>
+                  <source srcset="img/single-project-mini.avif" type="image/avif">
+                  <source srcset="img/single-project-mini.webp" type="image/webp">
+                  <img class="tabs__swiper-img" src="img/single-project-mini.jpg" alt="">
+                </picture>
+              </div>
+              <div class="tabs__swiper-slide swiper-slide">
+                <picture>
+                  <source srcset="img/single-project-mini.avif" type="image/avif">
+                  <source srcset="img/single-project-mini.webp" type="image/webp">
+                  <img class="tabs__swiper-img" src="img/single-project-mini.jpg" alt="">
+                </picture>
+              </div>
+              <div class="tabs__swiper-slide swiper-slide">
+                <picture>
+                  <source srcset="img/single-project-mini.avif" type="image/avif">
+                  <source srcset="img/single-project-mini.webp" type="image/webp">
+                  <img class="tabs__swiper-img" src="img/single-project-mini.jpg" alt="">
+                </picture>
+              </div>
+              <div class="tabs__swiper-slide swiper-slide">
+                <picture>
+                  <source srcset="img/single-project-mini.avif" type="image/avif">
+                  <source srcset="img/single-project-mini.webp" type="image/webp">
+                  <img class="tabs__swiper-img" src="img/single-project-mini.jpg" alt="">
+                </picture>
+              </div>
+              <div class="tabs__swiper-slide swiper-slide">
+                <picture>
+                  <source srcset="img/single-project-mini.avif" type="image/avif">
+                  <source srcset="img/single-project-mini.webp" type="image/webp">
+                  <img class="tabs__swiper-img" src="img/single-project-mini.jpg" alt="">
+                </picture>
+              </div>
+              <div class="tabs__swiper-slide swiper-slide">
+                <picture>
+                  <source srcset="img/single-project-mini.avif" type="image/avif">
+                  <source srcset="img/single-project-mini.webp" type="image/webp">
+                  <img class="tabs__swiper-img" src="img/single-project-mini.jpg" alt="">
+                </picture>
+              </div>
+              <div class="tabs__swiper-slide swiper-slide">
+                <picture>
+                  <source srcset="img/single-project-mini.avif" type="image/avif">
+                  <source srcset="img/single-project-mini.webp" type="image/webp">
+                  <img class="tabs__swiper-img" src="img/single-project-mini.jpg" alt="">
+                </picture>
+              </div>
+              <div class="tabs__swiper-slide swiper-slide">
+                <picture>
+                  <source srcset="img/single-project-mini.avif" type="image/avif">
+                  <source srcset="img/single-project-mini.webp" type="image/webp">
+                  <img class="tabs__swiper-img" src="img/single-project-mini.jpg" alt="">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <p class="project__infromation-text">
+            С другой стороны постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу
+            (специалистов) участие в формировании систем массового участия. Товарищи! реализация намеченных плановых
+            заданий влечет за собой процесс внедрения и модернизации систем массового участия.
+          </p>
+          <p class="project__infromation-text">
+            Равным образом рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в
+            формировании
+            позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также
+            укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного
+            развития. Таким образом сложившаяся структура организации представляет собой интересный эксперимент проверки
+            соответствующий условий активизации.
+          </p>
+        </div>
+      </section>
+
+      <section class="project__main">
+        <div class="container">
+          <div class="project__main-tabs tabs" data-tabs="project__main-tabs">
+            <ul class="project__main-tabs-nav tabs__nav">
+              <li class="project__main-tabs-nav-item tabs__nav-item">
+                <button class="project__main-tabs-nav-btn tabs__nav-btn btn btn--transparent"
+                  type="button">Характеристики</button>
+              </li>
+              <li class="project__main-tabs-nav-item tabs__nav-item">
+                <button class="project__main-tabs-nav-btn tabs__nav-btn btn btn--transparent" type="button">Входит в
+                  стоимость</button>
+              </li>
+              <li class="project__main-tabs-nav-item tabs__nav-item">
+                <button class="project__main-tabs-nav-btn tabs__nav-btn btn btn--transparent" type="button">Гарантия и
+                  оплата</button>
+              </li>
+              <li class="project__main-tabs-nav-item tabs__nav-item">
+                <button class="project__main-tabs-nav-btn tabs__nav-btn btn btn--transparent" type="button">Видео и
+                  фото</button>
+              </li>
+            </ul>
+            <div class="project__main-tabs-content tabs__content">
+              <div class="project__main-tabs-panel tabs__panel">
+                <h3 class="project__main-tabs-panel-title title">Характеристики</h3>
+                <div class="сharacteristic">
+                  <ul class="сharacteristic__items">
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                  </ul>
+                  <ul class="сharacteristic__items">
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                    <li class="сharacteristic__item">
+                      Тёплая площадь: 32 — 97 м²
+                    </li>
+                  </ul>
+                  <div class="сharacteristic__media">
+                    <picture>
+                      <source srcset="./img/сharacteristic.avif" type="image/avif">
+                      <source srcset="./img/сharacteristic.webp" type="image/webp">
+                      <img class="сharacteristic__media-img" src="./img/сharacteristic.jpg" alt="Дом">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="project__main-tabs-panel tabs__panel">
+                <h3 class="project__main-tabs-panel-title title">входит в стоимость</h3>
+
+  <ul class="included-items">
+    <li class="included-items__item">
+      <picture>
+        <source srcset="img/single-project-enters.avif" type="image/avif">
+        <source srcset="img/single-project-enters.webp" type="image/webp">
+        <img class="included-items__item-img" src="img/single-project-enters.jpg" alt="">
+      </picture>
+      <p class="included-items__item-text">
+        Фундамент
+      </p>
+    </li>
+    <li class="included-items__item">
+      <picture>
+        <source srcset="img/single-project-enters.avif" type="image/avif">
+        <source srcset="img/single-project-enters.webp" type="image/webp">
+        <img class="included-items__item-img" src="img/single-project-enters.jpg" alt="">
+      </picture>
+      <p class="included-items__item-text">
+        Фундамент
+      </p>
+    </li>
+    <li class="included-items__item">
+      <picture>
+        <source srcset="img/single-project-enters.avif" type="image/avif">
+        <source srcset="img/single-project-enters.webp" type="image/webp">
+        <img class="included-items__item-img" src="img/single-project-enters.jpg" alt="">
+      </picture>
+      <p class="included-items__item-text">
+        Фундамент
+      </p>
+    </li>
+    <li class="included-items__item">
+      <picture>
+        <source srcset="img/single-project-enters.avif" type="image/avif">
+        <source srcset="img/single-project-enters.webp" type="image/webp">
+        <img class="included-items__item-img" src="img/single-project-enters.jpg" alt="">
+      </picture>
+      <p class="included-items__item-text">
+        Фундамент
+      </p>
+    </li>
+    <li class="included-items__item">
+      <picture>
+        <source srcset="img/single-project-enters.avif" type="image/avif">
+        <source srcset="img/single-project-enters.webp" type="image/webp">
+        <img class="included-items__item-img" src="img/single-project-enters.jpg" alt="">
+      </picture>
+      <p class="included-items__item-text">
+        Фундамент
+      </p>
+    </li>
+  </ul>
+
+  <div class="included-accordions">
+    <div class="included-accordions__single">
+      <div class="included-accordions__item">
+        <button class="included-accordions__btn">
+          <p class="included-accordions__title">1. Геодезические исследования (топосъемка)
+            участка</p>
+          <svg class="included-accordions__img">
+            <use xlink:href="img/sprite.svg#lk-arrow"></use>
+          </svg>
+        </button>
+        <div class="included-accordions__content">
+          Топографическая съемка — это комплекс инженерно-
+          геодезических работ по измерению участка местности и
+          занесению в топографический план данных об
+          особенностях рельефа, положении всех объектов и расстоянии
+          между ними.
+        </div>
+      </div>
+      <div class="included-accordions__item">
+        <button class="included-accordions__btn">
+          <p class="included-accordions__title">2. Геологические исследования грунта</p>
+          <svg class="included-accordions__img">
+            <use xlink:href="img/sprite.svg#lk-arrow"></use>
+          </svg>
+        </button>
+        <div class="included-accordions__content">
+          Топографическая съемка — это комплекс инженерно-
+          геодезических работ по измерению участка местности и
+          занесению в топографический план данных об
+          особенностях рельефа, положении всех объектов и расстоянии
+          между ними.
+        </div>
+      </div>
+      <div class="included-accordions__item">
+        <button class="included-accordions__btn">
+          <p class="included-accordions__title">3. Проект КЖ</p>
+          <svg class="included-accordions__img">
+            <use xlink:href="img/sprite.svg#lk-arrow"></use>
+          </svg>
+        </button>
+        <div class="included-accordions__content">
+          Топографическая съемка — это комплекс инженерно-
+          геодезических работ по измерению участка местности и
+          занесению в топографический план данных об
+          особенностях рельефа, положении всех объектов и расстоянии
+          между ними.
+        </div>
+      </div>
+      <div class="included-accordions__item">
+        <button class="included-accordions__btn">
+          <p class="included-accordions__title">4. Привязка осей на местности</p>
+          <svg class="included-accordions__img">
+            <use xlink:href="img/sprite.svg#lk-arrow"></use>
+          </svg>
+        </button>
+        <div class="included-accordions__content">
+          Топографическая съемка — это комплекс инженерно-
+          геодезических работ по измерению участка местности и
+          занесению в топографический план данных об
+          особенностях рельефа, положении всех объектов и расстоянии
+          между ними.
+        </div>
+      </div>
+      <div class="included-accordions__item">
+        <button class="included-accordions__btn">
+          <p class="included-accordions__title">5. Бетон В25 (М350)</p>
+          <svg class="included-accordions__img">
+            <use xlink:href="img/sprite.svg#lk-arrow"></use>
+          </svg>
+        </button>
+        <div class="included-accordions__content">
+          Топографическая съемка — это комплекс инженерно-
+          геодезических работ по измерению участка местности и
+          занесению в топографический план данных об
+          особенностях рельефа, положении всех объектов и расстоянии
+          между ними.
+        </div>
+      </div>
+    </div>
+    <div class="included-accordions__single">
+      <div class="included-accordions__item">
+        <button class="included-accordions__btn">
+          <p class="included-accordions__title">6. Монолитный ж/б ростверк</p>
+          <svg class="included-accordions__img">
+            <use xlink:href="img/sprite.svg#lk-arrow"></use>
+          </svg>
+        </button>
+        <div class="included-accordions__content">
+          Топографическая съемка — это комплекс инженерно-
+          геодезических работ по измерению участка местности и
+          занесению в топографический план данных об
+          особенностях рельефа, положении всех объектов и расстоянии
+          между ними.
+        </div>
+      </div>
+      <div class="included-accordions__item">
+        <button class="included-accordions__btn">
+          <p class="included-accordions__title">7. Забивные ж/б сваи</p>
+          <svg class="included-accordions__img">
+            <use xlink:href="img/sprite.svg#lk-arrow"></use>
+          </svg>
+        </button>
+        <div class="included-accordions__content">
+          Топографическая съемка — это комплекс инженерно-
+          геодезических работ по измерению участка местности и
+          занесению в топографический план данных об
+          особенностях рельефа, положении всех объектов и расстоянии
+          между ними.
+        </div>
+      </div>
+      <div class="included-accordions__item">
+        <button class="included-accordions__btn">
+          <p class="included-accordions__title">8. Закладные под коммуникации</p>
+          <svg class="included-accordions__img">
+            <use xlink:href="img/sprite.svg#lk-arrow"></use>
+          </svg>
+        </button>
+        <div class="included-accordions__content">
+          Топографическая съемка — это комплекс инженерно-
+          геодезических работ по измерению участка местности и
+          занесению в топографический план данных об
+          особенностях рельефа, положении всех объектов и расстоянии
+          между ними.
+        </div>
+      </div>
+      <div class="included-accordions__item">
+        <button class="included-accordions__btn">
+          <p class="included-accordions__title">9. Приемка инженером технического надзора</p>
+          <svg class="included-accordions__img">
+            <use xlink:href="img/sprite.svg#lk-arrow"></use>
+          </svg>
+        </button>
+        <div class="included-accordions__content">
+          Топографическая съемка — это комплекс инженерно-
+          геодезических работ по измерению участка местности и
+          занесению в топографический план данных об
+          особенностях рельефа, положении всех объектов и расстоянии
+          между ними.
+        </div>
+      </div>
+    </div>
+  </div>
+
+              </div>
+              <div class="project__main-tabs-panel tabs__panel">
+                <h3 class="project__main-tabs-panel-title title">Гарантия и оплата</h3>
+                <p class="project__main-tabs-panel-text">
+                  С другой стороны постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу
+                  (специалистов) участие в формировании систем массового участия. Товарищи! реализация намеченных
+                  плановых
+                  заданий влечет за собой процесс внедрения и модернизации систем массового участия.
+                </p>
+                <p class="project__main-tabs-panel-text">
+                  Равным образом рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в
+                  формировании позиций, занимаемых участниками в отношении поставленных задач.
+                </p>
+                <p class="project__main-tabs-panel-text">
+                  Идейные соображения высшего порядка, а также укрепление и развитие структуры позволяет выполнять
+                  важные
+                  задания по разработке направлений прогрессивного развития. Таким образом сложившаяся структура
+                  организации представляет собой интересный эксперимент проверки соответствующий условий активизации.
+                </p>
+              </div>
+              <div class="project__main-tabs-panel tabs__panel">
+                <h3 class="project__main-tabs-panel-title title">видео и фото</h3>
+                <div class="project__media-swiper swiper">
+                  <div class="project__media-swiper-wrapper swiper-wrapper">
+                    <div class="project__media-swiper-slide swiper-slide">
+                      <picture>
+                        <source srcset="img/single-project-media.avif" type="image/avif">
+                        <source srcset="img/single-project-media.webp" type="image/webp">
+                        <img class="project__media-swiper-slide-img" src="img/single-project-media.jpg" alt="">
+                      </picture>
+                    </div>
+                    <div class="project__media-swiper-slide swiper-slide">
+                      <picture>
+                        <source srcset="img/single-project-media.avif" type="image/avif">
+                        <source srcset="img/single-project-media.webp" type="image/webp">
+                        <img class="project__media-swiper-slide-img" src="img/single-project-media.jpg" alt="">
+                      </picture>
+                    </div>
+                    <div class="project__media-swiper-slide swiper-slide">
+                      <picture>
+                        <source srcset="img/single-project-media.avif" type="image/avif">
+                        <source srcset="img/single-project-media.webp" type="image/webp">
+                        <img class="project__media-swiper-slide-img" src="img/single-project-media.jpg" alt="">
+                      </picture>
+                    </div>
+                    <div class="project__media-swiper-slide swiper-slide">
+                      <picture>
+                        <source srcset="img/single-project-media.avif" type="image/avif">
+                        <source srcset="img/single-project-media.webp" type="image/webp">
+                        <img class="project__media-swiper-slide-img" src="img/single-project-media.jpg" alt="">
+                      </picture>
+                    </div>
+                    <div class="project__media-swiper-slide swiper-slide">
+                      <picture>
+                        <source srcset="img/single-project-media.avif" type="image/avif">
+                        <source srcset="img/single-project-media.webp" type="image/webp">
+                        <img class="project__media-swiper-slide-img" src="img/single-project-media.jpg" alt="">
+                      </picture>
+                    </div>
+                    <div class="project__media-swiper-slide swiper-slide">
+                      <picture>
+                        <source srcset="img/single-project-media.avif" type="image/avif">
+                        <source srcset="img/single-project-media.webp" type="image/webp">
+                        <img class="project__media-swiper-slide-img" src="img/single-project-media.jpg" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="project__media-swiper-button-prev swiper-button-prev"></div>
+                  <div class="project__media-swiper-button-next swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+  <section class="question" style="background-image: url('./img/question-bg2.jpg');
+  background-image: image-set(
+    './img/question-bg2.avif' type('image/avif'),
+    './img/question-bg2.webp' type('image/webp')
+  );">
+
+    <div class="container">
+      <div class="question__wrapper">
+        <h2 class="question__title">Остались вопросы?</h2>
+        <p class="question__subtitle">Оставьте заявку и наш менеджер свяжется с Вами в ближайшие 15 минут
+        </p>
+        <form class="question__form" action="#">
+          <input class="question__input" type="text" name="name" placeholder="Имя" required>
+          <input class="question__input" type="tel" inputmode="tel" name="tel" placeholder="8 (000) 000 00 00" required>
+          <button class="question__submit btn" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__top">
+                <a class="footer__logo" href="#">
+                    Logo
+                </a>
+
+                <ul class="footer__socials socials">
+                    <li class="socials__item">
+                        <a class="socials__item-link" href="#">
+                            <svg class="socials__item-img">
+                                <use xlink:href="img/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__item-link" href="#">
+                            <svg class="socials__item-img">
+                                <use xlink:href="img/sprite.svg#youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__item-link" href="#">
+                            <svg class="socials__item-img">
+                                <use xlink:href="img/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__bottom">
+                <table class="footer__contacts contacts-table">
+                    <tr>
+                        <td>Телефон:</td>
+                        <td>
+                            <a href="tel:+79999999999">
+                                8 999 999 99 99
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td>
+                            <a href="mailto:postname@example.com">
+                                postname@example.com
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Адрес:</td>
+                        <td>
+                            <a href="https://yandex.ru/maps/-/CDBd703P" target="_blank">
+                                г. Санкт-Петербург Лиговский проспект, д 53, офис 215
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <nav class="footer__nav">
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Наши работы
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Вакансии
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__info">
+                <a class="footer__privacy" href="#">
+                    Политика конфиденциальности
+                </a>
+                <a class="footer__development" href="#" target="_blank">
+                    Разработка и продвижение
+                </a>
+            </div>
+
+            <div class="graph-modal">
+                <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="questions">
+                    <button class="btn-reset graph-modal__close js-modal-close"
+                        aria-label="Закрыть модальное окно"></button>
+                    <div class="graph-modal__content">
+
+  <section class="question" style="background-image: url('./img/hero-bg.jpg');
+  background-image: image-set(
+    './img/hero-bg.avif' type('image/avif'),
+    './img/hero-bg.webp' type('image/webp')
+  );">
+
+    <div class="container">
+      <div class="question__wrapper">
+        <h2 class="question__title">Остались вопросы?</h2>
+        <p class="question__subtitle">Оставьте заявку и наш менеджер свяжется с Вами в ближайшие 15 минут
+        </p>
+        <form class="question__form" action="#">
+          <input class="question__input" type="text" name="name" placeholder="Имя" required>
+          <input class="question__input" type="tel" inputmode="tel" name="tel" placeholder="8 (000) 000 00 00" required>
+          <button class="question__submit btn" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+                    </div>
+                </div>
+                <div class="graph-modal__container" role="dialog" aria-modal="true"
+                    data-graph-target="questions-success">
+                    <button class="btn-reset graph-modal__close js-modal-close"
+                        aria-label="Закрыть модальное окно"></button>
+                    <div class="graph-modal__content">
+                        <section class="question" style="background-image: url('./img/hero-bg.jpg');
+background-image: image-set(
+  './img/hero-bg.avif' type('image/avif'),
+  './img/hero-bg.webp' type('image/webp')
+);">
+  <div class="container">
+    <div class="question__wrapper question__wrapper--success">
+      <h2 class="question__title">Спасибо за заявку!</h2>
+      <p class="question__subtitle">Наш специалист свяжется с вами в течение 15 минут
+      </p>
+    </div>
+  </div>
+</section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
