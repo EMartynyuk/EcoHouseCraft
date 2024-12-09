@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HouseCraft</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/main.min.js"></script>
+
+</head>
+
+<body class="body">
+
+    <header class="header" style="background-image: url('./img/hero-bg.jpg');
+    background-image: image-set(
+      './img/hero-bg.avif' type('image/avif'),
+      './img/hero-bg.webp' type('image/webp')
+    );">
+
+        <div class="container">
+            <div class="header__top">
+                <div class="header__top-wrapper">
+                    <a class="header__logo" href="index.html">
+                        Logo
+                    </a>
+                    <div class="header__contacts">
+                        <a class="header__contact" href="#" target="_blank">написать в <span
+                                class="header__contact-span">whatsapp</span></a>
+                        <a class="header__contact" href="#" target="_blank">написать в <span
+                                class="header__contact-span">telegram</span></a>
+                    </div>
+                    <a class="header__tel" href="tel:+79999999999">+7 999 999-99-99</a>
+                    <button class="burger" aria-label="Открыть меню">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </button>
+                    <div class="mob-nav"></div>
+                </div>
+
+            </div>
+            <div class="header__bottom">
+                <div class="header__bottom-wrapper">
+                    <nav class="header__nav">
+                        <ul class="header__items">
+                            <li class="header__item">
+                                <a class="header__item-link" href="projects.html">
+                                    Проекты
+                                    <svg class="header__item-link-svg">
+                                        <use xlink:href="img/sprite.svg#header-arrow"></use>
+                                    </svg>
+                                </a>
+                                <ul class="header__submenu">
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="single-project.html">Проект 1</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="single-project2.html">Проект 2</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Проект 3</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Проект 4</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Проект 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="services.html">
+                                    Услуги
+                                    <svg class="header__item-link-svg">
+                                        <use xlink:href="img/sprite.svg#header-arrow"></use>
+                                    </svg>
+                                </a>
+                                <ul class="header__submenu">
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 1</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 2</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 3</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 4</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="works.html">Наши работы</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="about.html">О нас</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="news.html">Новости</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link popup" href="#"  data-graph-animation="fadeInUp" data-graph-path="questions">Вакансии</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="header__personal" href="lk.html">
+                        <svg class="header__personal-img">
+                            <use xlink:href="img/sprite.svg#lk"></use>
+                        </svg>
+                        <span class="header__personal-text">Личный кабинет</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+  <main class="main">
+    <section class="works">
+      <div class="container">
+        <div class="works__wrapper">
+          <h1 class="works__title subtitle">Наши работы</h1>
+          <p class="works__text">
+            С другой стороны реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации
+            системы обучения кадров, соответствует насущным потребностям. Равным образом начало повседневной работы по
+            формированию позиции способствует подготовки и реализации направлений прогрессивного развития.
+          </p>
+          <div class="works__swiper swiper">
+            <div class="works__swiper-wrapper swiper-wrapper">
+              <div class="works__swiper-slide swiper-slide">
+                <div class="works-card">
+                  <div class="works-card__wrapper">
+                    <div class="works-card__media">
+                      <picture>
+                        <source srcset="./img/works.avif" type="image/avif">
+                        <source srcset="./img/works.webp" type="image/webp">
+                        <img class="works-card__media-img" src="./img/works.jpg" alt="Дом в Комарово">
+                      </picture>
+                    </div>
+                    <div class="works-card__content">
+                      <h3 class="works-card__title">Проект 1</h3>
+                      <p class="works-card__address">Ленинградская область, 2 км Приозерского шоссе</p>
+                      <a class="works-card__btn btn" href="#">Записаться на просмотр</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="works__swiper-slide swiper-slide">
+                <div class="works-card">
+                  <div class="works-card__wrapper">
+                    <div class="works-card__media">
+                      <picture>
+                        <source srcset="./img/works.avif" type="image/avif">
+                        <source srcset="./img/works.webp" type="image/webp">
+                        <img class="works-card__media-img" src="./img/works.jpg" alt="Дом в Комарово">
+                      </picture>
+                    </div>
+                    <div class="works-card__content">
+                      <h3 class="works-card__title">Проект 1</h3>
+                      <p class="works-card__address">Ленинградская область, 2 км Приозерского шоссе</p>
+                      <a class="works-card__btn btn" href="#">Записаться на просмотр</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="works__swiper-slide swiper-slide">
+                <div class="works-card">
+                  <div class="works-card__wrapper">
+                    <div class="works-card__media">
+                      <picture>
+                        <source srcset="./img/works.avif" type="image/avif">
+                        <source srcset="./img/works.webp" type="image/webp">
+                        <img class="works-card__media-img" src="./img/works.jpg" alt="Дом в Комарово">
+                      </picture>
+                    </div>
+                    <div class="works-card__content">
+                      <h3 class="works-card__title">Проект 1</h3>
+                      <p class="works-card__address">Ленинградская область, 2 км Приозерского шоссе</p>
+                      <a class="works-card__btn btn" href="#">Записаться на просмотр</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="works__swiper-slide swiper-slide">
+                <div class="works-card">
+                  <div class="works-card__wrapper">
+                    <div class="works-card__media">
+                      <picture>
+                        <source srcset="./img/works.avif" type="image/avif">
+                        <source srcset="./img/works.webp" type="image/webp">
+                        <img class="works-card__media-img" src="./img/works.jpg" alt="Дом в Комарово">
+                      </picture>
+                    </div>
+                    <div class="works-card__content">
+                      <h3 class="works-card__title">Проект 1</h3>
+                      <p class="works-card__address">Ленинградская область, 2 км Приозерского шоссе</p>
+                      <a class="works-card__btn btn" href="#">Записаться на просмотр</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="works__swiper-slide swiper-slide">
+                <div class="works-card">
+                  <div class="works-card__wrapper">
+                    <div class="works-card__media">
+                      <picture>
+                        <source srcset="./img/works.avif" type="image/avif">
+                        <source srcset="./img/works.webp" type="image/webp">
+                        <img class="works-card__media-img" src="./img/works.jpg" alt="Дом в Комарово">
+                      </picture>
+                    </div>
+                    <div class="works-card__content">
+                      <h3 class="works-card__title">Проект 1</h3>
+                      <p class="works-card__address">Ленинградская область, 2 км Приозерского шоссе</p>
+                      <a class="works-card__btn btn" href="#">Записаться на просмотр</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="works__swiper-slide swiper-slide">
+                <div class="works-card">
+                  <div class="works-card__wrapper">
+                    <div class="works-card__media">
+                      <picture>
+                        <source srcset="./img/works.avif" type="image/avif">
+                        <source srcset="./img/works.webp" type="image/webp">
+                        <img class="works-card__media-img" src="./img/works.jpg" alt="Дом в Комарово">
+                      </picture>
+                    </div>
+                    <div class="works-card__content">
+                      <h3 class="works-card__title">Проект 1</h3>
+                      <p class="works-card__address">Ленинградская область, 2 км Приозерского шоссе</p>
+                      <a class="works-card__btn btn" href="#">Записаться на просмотр</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="works__swiper-slide swiper-slide">
+                <div class="works-card">
+                  <div class="works-card__wrapper">
+                    <div class="works-card__media">
+                      <picture>
+                        <source srcset="./img/works.avif" type="image/avif">
+                        <source srcset="./img/works.webp" type="image/webp">
+                        <img class="works-card__media-img" src="./img/works.jpg" alt="Дом в Комарово">
+                      </picture>
+                    </div>
+                    <div class="works-card__content">
+                      <h3 class="works-card__title">Проект 1</h3>
+                      <p class="works-card__address">Ленинградская область, 2 км Приозерского шоссе</p>
+                      <a class="works-card__btn btn" href="#">Записаться на просмотр</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="works__swiper-slide swiper-slide">
+                <div class="works-card">
+                  <div class="works-card__wrapper">
+                    <div class="works-card__media">
+                      <picture>
+                        <source srcset="./img/works.avif" type="image/avif">
+                        <source srcset="./img/works.webp" type="image/webp">
+                        <img class="works-card__media-img" src="./img/works.jpg" alt="Дом в Комарово">
+                      </picture>
+                    </div>
+                    <div class="works-card__content">
+                      <h3 class="works-card__title">Проект 1</h3>
+                      <p class="works-card__address">Ленинградская область, 2 км Приозерского шоссе</p>
+                      <a class="works-card__btn btn" href="#">Записаться на просмотр</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="works__swiper-slide swiper-slide">
+                <div class="works-card">
+                  <div class="works-card__wrapper">
+                    <div class="works-card__media">
+                      <picture>
+                        <source srcset="./img/works.avif" type="image/avif">
+                        <source srcset="./img/works.webp" type="image/webp">
+                        <img class="works-card__media-img" src="./img/works.jpg" alt="Дом в Комарово">
+                      </picture>
+                    </div>
+                    <div class="works-card__content">
+                      <h3 class="works-card__title">Проект 1</h3>
+                      <p class="works-card__address">Ленинградская область, 2 км Приозерского шоссе</p>
+                      <a class="works-card__btn btn" href="#">Записаться на просмотр</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="works__swiper-slide swiper-slide">
+                <div class="works-card">
+                  <div class="works-card__wrapper">
+                    <div class="works-card__media">
+                      <picture>
+                        <source srcset="./img/works.avif" type="image/avif">
+                        <source srcset="./img/works.webp" type="image/webp">
+                        <img class="works-card__media-img" src="./img/works.jpg" alt="Дом в Комарово">
+                      </picture>
+                    </div>
+                    <div class="works-card__content">
+                      <h3 class="works-card__title">Проект 1</h3>
+                      <p class="works-card__address">Ленинградская область, 2 км Приозерского шоссе</p>
+                      <a class="works-card__btn btn" href="#">Записаться на просмотр</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="question" style="background-image: url('./img/question-bg2.jpg');
+  background-image: image-set(
+    './img/question-bg2.avif' type('image/avif'),
+    './img/question-bg2.webp' type('image/webp')
+  );">
+
+    <div class="container">
+      <div class="question__wrapper">
+        <h2 class="question__title">Остались вопросы?</h2>
+        <p class="question__subtitle">Оставьте заявку и наш менеджер свяжется с Вами в ближайшие 15 минут
+        </p>
+        <form class="question__form" action="#">
+          <input class="question__input" type="text" name="name" placeholder="Имя" required>
+          <input class="question__input" type="tel" inputmode="tel" name="tel" placeholder="8 (000) 000 00 00" required>
+          <button class="question__submit btn" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__top">
+                <a class="footer__logo" href="#">
+                    Logo
+                </a>
+
+                <ul class="footer__socials socials">
+                    <li class="socials__item">
+                        <a class="socials__item-link" href="#">
+                            <svg class="socials__item-img">
+                                <use xlink:href="img/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__item-link" href="#">
+                            <svg class="socials__item-img">
+                                <use xlink:href="img/sprite.svg#youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__item-link" href="#">
+                            <svg class="socials__item-img">
+                                <use xlink:href="img/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__bottom">
+                <table class="footer__contacts contacts-table">
+                    <tr>
+                        <td>Телефон:</td>
+                        <td>
+                            <a href="tel:+79999999999">
+                                8 999 999 99 99
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td>
+                            <a href="mailto:postname@example.com">
+                                postname@example.com
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Адрес:</td>
+                        <td>
+                            <a href="https://yandex.ru/maps/-/CDBd703P" target="_blank">
+                                г. Санкт-Петербург Лиговский проспект, д 53, офис 215
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <nav class="footer__nav">
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Наши работы
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Вакансии
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__info">
+                <a class="footer__privacy" href="#">
+                    Политика конфиденциальности
+                </a>
+                <a class="footer__development" href="#" target="_blank">
+                    Разработка и продвижение
+                </a>
+            </div>
+
+            <div class="graph-modal">
+                <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="questions">
+                    <button class="btn-reset graph-modal__close js-modal-close"
+                        aria-label="Закрыть модальное окно"></button>
+                    <div class="graph-modal__content">
+
+  <section class="question" style="background-image: url('./img/hero-bg.jpg');
+  background-image: image-set(
+    './img/hero-bg.avif' type('image/avif'),
+    './img/hero-bg.webp' type('image/webp')
+  );">
+
+    <div class="container">
+      <div class="question__wrapper">
+        <h2 class="question__title">Остались вопросы?</h2>
+        <p class="question__subtitle">Оставьте заявку и наш менеджер свяжется с Вами в ближайшие 15 минут
+        </p>
+        <form class="question__form" action="#">
+          <input class="question__input" type="text" name="name" placeholder="Имя" required>
+          <input class="question__input" type="tel" inputmode="tel" name="tel" placeholder="8 (000) 000 00 00" required>
+          <button class="question__submit btn" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+                    </div>
+                </div>
+                <div class="graph-modal__container" role="dialog" aria-modal="true"
+                    data-graph-target="questions-success">
+                    <button class="btn-reset graph-modal__close js-modal-close"
+                        aria-label="Закрыть модальное окно"></button>
+                    <div class="graph-modal__content">
+                        <section class="question" style="background-image: url('./img/hero-bg.jpg');
+background-image: image-set(
+  './img/hero-bg.avif' type('image/avif'),
+  './img/hero-bg.webp' type('image/webp')
+);">
+  <div class="container">
+    <div class="question__wrapper question__wrapper--success">
+      <h2 class="question__title">Спасибо за заявку!</h2>
+      <p class="question__subtitle">Наш специалист свяжется с вами в течение 15 минут
+      </p>
+    </div>
+  </div>
+</section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HouseCraft</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/main.min.js"></script>
+
+</head>
+
+<body class="body">
+
+<header class="header header--hero" style="background-image: url('./img/hero-bg.jpg');
+background-image: image-set(
+  './img/hero-bg.avif' type('image/avif'),
+  './img/hero-bg.webp' type('image/webp')
+);">
+
+        <div class="container">
+            <div class="header__top">
+                <div class="header__top-wrapper">
+                    <a class="header__logo" href="index.html">
+                        Logo
+                    </a>
+                    <div class="header__contacts">
+                        <a class="header__contact" href="#" target="_blank">написать в <span
+                                class="header__contact-span">whatsapp</span></a>
+                        <a class="header__contact" href="#" target="_blank">написать в <span
+                                class="header__contact-span">telegram</span></a>
+                    </div>
+                    <a class="header__tel" href="tel:+79999999999">+7 999 999-99-99</a>
+                    <button class="burger" aria-label="Открыть меню">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </button>
+                    <div class="mob-nav"></div>
+                </div>
+
+            </div>
+            <div class="header__bottom">
+                <div class="header__bottom-wrapper">
+                    <nav class="header__nav">
+                        <ul class="header__items">
+                            <li class="header__item">
+                                <a class="header__item-link" href="projects.html">
+                                    Проекты
+                                    <svg class="header__item-link-svg">
+                                        <use xlink:href="img/sprite.svg#header-arrow"></use>
+                                    </svg>
+                                </a>
+                                <ul class="header__submenu">
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="single-project.html">Проект 1</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="single-project2.html">Проект 2</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Проект 3</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Проект 4</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Проект 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="services.html">
+                                    Услуги
+                                    <svg class="header__item-link-svg">
+                                        <use xlink:href="img/sprite.svg#header-arrow"></use>
+                                    </svg>
+                                </a>
+                                <ul class="header__submenu">
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 1</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 2</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 3</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 4</a>
+                                    </li>
+                                    <li class="header__submenu-list">
+                                        <a class="header__submenu-link" href="#">Услуги 5</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="works.html">Наши работы</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="about.html">О нас</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="news.html">Новости</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link popup" href="#"  data-graph-animation="fadeInUp" data-graph-path="questions">Вакансии</a>
+                            </li>
+                            <li class="header__item">
+                                <a class="header__item-link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a class="header__personal" href="lk.html">
+                        <svg class="header__personal-img">
+                            <use xlink:href="img/sprite.svg#lk"></use>
+                        </svg>
+                        <span class="header__personal-text">Личный кабинет</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="header__hero hero">
+                <div class="hero__wrapper">
+                    <h1 class="hero__title">Готовый каркасный дом за 30 дней без стройки на участке</h1>
+                    <p class="hero__subtitle">
+                        Под ключ с полной отделкой и коммуникациями, с коммуникациями и под ключ
+                    </p>
+                    <a class="hero__btn btn" href="#">Смотреть проекты</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="main">
+        <section class="projects">
+            <div class="container">
+                <div class="projects__wrapper">
+                    <h2 class="projects__title">Наши проекты</h2>
+
+                    <a class="card" href="#">
+                        <div class="card__wrapper">
+                            <div class="card__media">
+                                <picture>
+                                    <source srcset="./img/card3.avif" type="image/avif">
+                                    <source srcset="./img/card3.webp" type="image/webp">
+                                    <img class="card__media-img" src="./img/card3.jpg" alt="Дом в Комарово">
+                                </picture>
+                            </div>
+                            <div class="card__content">
+                                <div class="card__content-left">
+                                    <h3 class="card__title">Дом в Комарово</h3>
+                                    <ul class="card__descr">
+                                        <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                                        <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                                        <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                                    </ul>
+                                </div>
+                                <div class="card__content-right">
+                                    <p class="card__price">
+                                        от 13 540 000 ₽
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__overlay"></div>
+                        <div class="card__overlay-circle">
+                        </div>
+                    </a>
+
+                    <a class="card card--small" href="#">
+                        <div class="card__wrapper">
+                            <div class="card__media">
+                                <picture>
+                                    <source media="(max-width: 576px)" srcset="./img/card-2.jpg">
+                                    <img class="card__media-img" src="./img/card.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="card__content">
+                                <h3 class="card__title">Дом в Комарово</h3>
+                                <ul class="card__descr">
+                                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                                </ul>
+
+                                <p class="card__price">
+                                    от 13 540 000 ₽
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card__overlay-circle">
+                        </div>
+                    </a>
+
+                    <a class="card card--small" href="#">
+                        <div class="card__wrapper">
+                            <div class="card__media">
+                                <picture>
+                                    <source media="(max-width: 576px)" srcset="./img/card2-2.jpg">
+                                    <img class="card__media-img" src="./img/card2.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="card__content">
+                                <h3 class="card__title">Дом в Комарово</h3>
+                                <ul class="card__descr">
+                                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                                </ul>
+
+                                <p class="card__price">
+                                    от 13 540 000 ₽
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card__overlay-circle">
+                        </div>
+                    </a>
+
+                    <a class="projects__btn btn btn--transparent" href="#">Смотреть проекты</a>
+                </div>
+            </div>
+        </section>
+
+<section class="question" style="background-image: url('./img/question-bg.jpg');
+background-image: image-set(
+  './img/question-bg.avif' type('image/avif'),
+  './img/question-bg.webp' type('image/webp')
+);">
+
+    <div class="container">
+      <div class="question__wrapper">
+        <h2 class="question__title">Остались вопросы?</h2>
+        <p class="question__subtitle">Оставьте заявку и наш менеджер свяжется с Вами в ближайшие 15 минут
+        </p>
+        <form class="question__form" action="#">
+          <input class="question__input" type="text" name="name" placeholder="Имя" required>
+          <input class="question__input" type="tel" inputmode="tel" name="tel" placeholder="8 (000) 000 00 00" required>
+          <button class="question__submit btn" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+        <section class="about">
+            <div class="about__wrapper">
+                <div class="about__media">
+                    <picture>
+                        <source srcset="./img/about.avif" type="image/avif">
+                        <source srcset="./img/about.webp" type="image/webp">
+                        <img class="about__media-img" src="./img/about.jpg" alt="Пример дома">
+                    </picture>
+                </div>
+                <div class="about__content">
+                    <h2 class="about__title title">О компании</h2>
+                    <div class="about__subtitle subtitle">Готовый каркасный дом без стройки на участке</div>
+                    <p class="about__text">
+                        Под ключ с полной отделкой и коммуникациями, с коммуник. Намеченных плановых заданий требуют
+                        от нас анализа новых предложений. Задача организации, в особенности же постоянный
+                        количественный рост и сфера нашей активности требуют определения и уточнения соответствующий
+                        условий активизации.
+
+                    </p>
+                    <p class="about__text">
+                        Намеченных плановых заданий требуют от нас анализа новых предложений. Не следует, однако
+                        забывать, что реализация намеченных плановых заданий
+                    </p>
+                    <ul class="about__advantages">
+                        <li class="about__advantage">
+                            <span class="about__advantage-num">20+</span>
+                            <span class="about__advantage-text">проектов домов</span>
+                        </li>
+                        <li class="about__advantage">
+                            <span class="about__advantage-num">394+</span>
+                            <span class="about__advantage-text">дома построили</span>
+                        </li>
+                    </ul>
+                    <a class="about__btn btn btn--transparent" href="#">Смотреть проекты</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+  <div class="container">
+    <div class="work__wrapper">
+
+      <h2 class="work__title title">Как мы работаем</h2>
+      <div class="work__subtitle subtitle">Готовый каркасный дом без стройки на участке</div>
+
+      <ul class="work__stages">
+
+<li class="stage">
+  <div class="stage__wrap">
+    <span class="stage__num">1 этап</span>
+    <p class="stage__title">Сборка на участке</p>
+    <p class="stage__subtitle">Под ключ с полной отделкой и коммуникациями. Намеченных плановых
+      заданий требуют </p>
+  </div>
+</li>
+
+<li class="stage">
+  <div class="stage__wrap">
+    <span class="stage__num">2 этап</span>
+    <p class="stage__title">Сборка на участке</p>
+    <p class="stage__subtitle">Под ключ с полной отделкой и коммуникациями. Намеченных плановых
+      заданий требуют </p>
+  </div>
+</li>
+
+<li class="stage">
+  <div class="stage__wrap">
+    <span class="stage__num">3 этап</span>
+    <p class="stage__title">Сборка на участке</p>
+    <p class="stage__subtitle">Под ключ с полной отделкой и коммуникациями. Намеченных плановых
+      заданий требуют </p>
+  </div>
+</li>
+
+<li class="stage stage--card">
+  <div class="stage__wrap">
+    <div class="stage__media">
+      <picture>
+        <source media="(max-width: 768px)" srcset="./img/work-card-2.jpg">
+        <img class="stage__img" src="./img/work-card.jpg" alt="">
+      </picture>
+    </div>
+    <div class="stage__content">
+      <span class="stage__num">4 этап</span>
+      <p class="stage__title">Сборка на участке</p>
+      <p class="stage__subtitle">Под ключ с полной отделкой и коммуникациями. Намеченных
+        плановых заданий требуют Под ключ с полной отделкой и коммуникациями. Намеченных
+        плановых заданий требуют </p>
+    </div>
+  </div>
+</li>
+
+<li class="stage">
+  <div class="stage__wrap">
+    <span class="stage__num">5 этап</span>
+    <p class="stage__title">Сборка на участке</p>
+    <p class="stage__subtitle">Под ключ с полной отделкой и коммуникациями. Намеченных плановых
+      заданий требуют </p>
+  </div>
+</li>
+
+<li class="stage">
+  <div class="stage__wrap">
+    <span class="stage__num">6 этап</span>
+    <p class="stage__title">Сборка на участке</p>
+    <p class="stage__subtitle">Под ключ с полной отделкой и коммуникациями. Намеченных плановых
+      заданий требуют </p>
+  </div>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="example">
+  <div class="example__wrapper">
+    <h2 class="example__title title">Наши работы</h2>
+    <div class="example__swiper swiper">
+      <div class="example__swiper-wrapper swiper-wrapper">
+        <div class="example__swiper-slide swiper-slide">
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <div class="card__media">
+                <picture>
+                  <source srcset="./img/card3.avif" type="image/avif">
+                  <source srcset="./img/card3.webp" type="image/webp">
+                  <img class="card__media-img" src="./img/card3.jpg" alt="Дом в Комарово">
+                </picture>
+              </div>
+              <div class="card__content">
+                <div class="card__content-left">
+                  <h3 class="card__title">Дом в Комарово</h3>
+                  <ul class="card__descr">
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                  </ul>
+                </div>
+                <div class="card__content-right">
+                  <p class="card__price">
+                    от 13 540 000 ₽
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card__overlay"></div>
+            <div class="card__overlay-circle">
+            </div>
+          </a>
+        </div>
+        <div class="example__swiper-slide swiper-slide">
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <div class="card__media">
+                <picture>
+                  <source srcset="./img/card3.avif" type="image/avif">
+                  <source srcset="./img/card3.webp" type="image/webp">
+                  <img class="card__media-img" src="./img/card3.jpg" alt="Дом в Комарово">
+                </picture>
+              </div>
+              <div class="card__content">
+                <div class="card__content-left">
+                  <h3 class="card__title">Дом в Комарово</h3>
+                  <ul class="card__descr">
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                  </ul>
+                </div>
+                <div class="card__content-right">
+                  <p class="card__price">
+                    от 13 540 000 ₽
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card__overlay"></div>
+            <div class="card__overlay-circle">
+            </div>
+          </a>
+        </div>
+        <div class="example__swiper-slide swiper-slide">
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <div class="card__media">
+                <picture>
+                  <source srcset="./img/card3.avif" type="image/avif">
+                  <source srcset="./img/card3.webp" type="image/webp">
+                  <img class="card__media-img" src="./img/card3.jpg" alt="Дом в Комарово">
+                </picture>
+              </div>
+              <div class="card__content">
+                <div class="card__content-left">
+                  <h3 class="card__title">Дом в Комарово</h3>
+                  <ul class="card__descr">
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                  </ul>
+                </div>
+                <div class="card__content-right">
+                  <p class="card__price">
+                    от 13 540 000 ₽
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card__overlay"></div>
+            <div class="card__overlay-circle">
+            </div>
+          </a>
+        </div>
+        <div class="example__swiper-slide swiper-slide">
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <div class="card__media">
+                <picture>
+                  <source srcset="./img/card3.avif" type="image/avif">
+                  <source srcset="./img/card3.webp" type="image/webp">
+                  <img class="card__media-img" src="./img/card3.jpg" alt="Дом в Комарово">
+                </picture>
+              </div>
+              <div class="card__content">
+                <div class="card__content-left">
+                  <h3 class="card__title">Дом в Комарово</h3>
+                  <ul class="card__descr">
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                  </ul>
+                </div>
+                <div class="card__content-right">
+                  <p class="card__price">
+                    от 13 540 000 ₽
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card__overlay"></div>
+            <div class="card__overlay-circle">
+            </div>
+          </a>
+        </div>
+        <div class="example__swiper-slide swiper-slide">
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <div class="card__media">
+                <picture>
+                  <source srcset="./img/card3.avif" type="image/avif">
+                  <source srcset="./img/card3.webp" type="image/webp">
+                  <img class="card__media-img" src="./img/card3.jpg" alt="Дом в Комарово">
+                </picture>
+              </div>
+              <div class="card__content">
+                <div class="card__content-left">
+                  <h3 class="card__title">Дом в Комарово</h3>
+                  <ul class="card__descr">
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                  </ul>
+                </div>
+                <div class="card__content-right">
+                  <p class="card__price">
+                    от 13 540 000 ₽
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card__overlay"></div>
+            <div class="card__overlay-circle">
+            </div>
+          </a>
+        </div>
+        <div class="example__swiper-slide swiper-slide">
+          <a class="card" href="#">
+            <div class="card__wrapper">
+              <div class="card__media">
+                <picture>
+                  <source srcset="./img/card3.avif" type="image/avif">
+                  <source srcset="./img/card3.webp" type="image/webp">
+                  <img class="card__media-img" src="./img/card3.jpg" alt="Дом в Комарово">
+                </picture>
+              </div>
+              <div class="card__content">
+                <div class="card__content-left">
+                  <h3 class="card__title">Дом в Комарово</h3>
+                  <ul class="card__descr">
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                    <li class="card__descr-item">Тёплая площадь: 32 — 97 м²</li>
+                  </ul>
+                </div>
+                <div class="card__content-right">
+                  <p class="card__price">
+                    от 13 540 000 ₽
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card__overlay"></div>
+            <div class="card__overlay-circle">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="example__buttom">
+      <a class="example__btn btn btn--transparent" href="#">Смотреть все работы</a>
+    </div>
+  </div>
+</section>
+
+        <section class="shorts">
+            <div class="container">
+                <div class="shorts__wrapper">
+                    <h2 class="shorts__title title">shorts</h2>
+                    <div class="shorts__subtitle subtitle">Рассказываем о работе</div>
+
+                    <div class="shorts__items">
+                        <iframe height="560" src="https://www.youtube.com/embed/c7Dhk-ivw0Q"
+                            title="Chipi Chipi Chapa Chapa Cat | Green Screen" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <iframe height="560" src="https://www.youtube.com/embed/c7Dhk-ivw0Q"
+                            title="Chipi Chipi Chapa Chapa Cat | Green Screen" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <iframe height="560" src="https://www.youtube.com/embed/c7Dhk-ivw0Q"
+                            title="Chipi Chipi Chapa Chapa Cat | Green Screen" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <iframe height="560" src="https://www.youtube.com/embed/c7Dhk-ivw0Q"
+                            title="Chipi Chipi Chapa Chapa Cat | Green Screen" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+  <section class="question" style="background-image: url('./img/question-bg2.jpg');
+  background-image: image-set(
+    './img/question-bg2.avif' type('image/avif'),
+    './img/question-bg2.webp' type('image/webp')
+  );">
+
+    <div class="container">
+      <div class="question__wrapper">
+        <h2 class="question__title">Остались вопросы?</h2>
+        <p class="question__subtitle">Оставьте заявку и наш менеджер свяжется с Вами в ближайшие 15 минут
+        </p>
+        <form class="question__form" action="#">
+          <input class="question__input" type="text" name="name" placeholder="Имя" required>
+          <input class="question__input" type="tel" inputmode="tel" name="tel" placeholder="8 (000) 000 00 00" required>
+          <button class="question__submit btn" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__top">
+                <a class="footer__logo" href="#">
+                    Logo
+                </a>
+
+                <ul class="footer__socials socials">
+                    <li class="socials__item">
+                        <a class="socials__item-link" href="#">
+                            <svg class="socials__item-img">
+                                <use xlink:href="img/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__item-link" href="#">
+                            <svg class="socials__item-img">
+                                <use xlink:href="img/sprite.svg#youtube"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials__item">
+                        <a class="socials__item-link" href="#">
+                            <svg class="socials__item-img">
+                                <use xlink:href="img/sprite.svg#vk"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__bottom">
+                <table class="footer__contacts contacts-table">
+                    <tr>
+                        <td>Телефон:</td>
+                        <td>
+                            <a href="tel:+79999999999">
+                                8 999 999 99 99
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td>
+                            <a href="mailto:postname@example.com">
+                                postname@example.com
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Адрес:</td>
+                        <td>
+                            <a href="https://yandex.ru/maps/-/CDBd703P" target="_blank">
+                                г. Санкт-Петербург Лиговский проспект, д 53, офис 215
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <nav class="footer__nav">
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Проекты
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Наши работы
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__items">
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Вакансии
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__item-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="footer__info">
+                <a class="footer__privacy" href="#">
+                    Политика конфиденциальности
+                </a>
+                <a class="footer__development" href="#" target="_blank">
+                    Разработка и продвижение
+                </a>
+            </div>
+
+            <div class="graph-modal">
+                <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="questions">
+                    <button class="btn-reset graph-modal__close js-modal-close"
+                        aria-label="Закрыть модальное окно"></button>
+                    <div class="graph-modal__content">
+
+  <section class="question" style="background-image: url('./img/hero-bg.jpg');
+  background-image: image-set(
+    './img/hero-bg.avif' type('image/avif'),
+    './img/hero-bg.webp' type('image/webp')
+  );">
+
+    <div class="container">
+      <div class="question__wrapper">
+        <h2 class="question__title">Остались вопросы?</h2>
+        <p class="question__subtitle">Оставьте заявку и наш менеджер свяжется с Вами в ближайшие 15 минут
+        </p>
+        <form class="question__form" action="#">
+          <input class="question__input" type="text" name="name" placeholder="Имя" required>
+          <input class="question__input" type="tel" inputmode="tel" name="tel" placeholder="8 (000) 000 00 00" required>
+          <button class="question__submit btn" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+                    </div>
+                </div>
+                <div class="graph-modal__container" role="dialog" aria-modal="true"
+                    data-graph-target="questions-success">
+                    <button class="btn-reset graph-modal__close js-modal-close"
+                        aria-label="Закрыть модальное окно"></button>
+                    <div class="graph-modal__content">
+                        <section class="question" style="background-image: url('./img/hero-bg.jpg');
+background-image: image-set(
+  './img/hero-bg.avif' type('image/avif'),
+  './img/hero-bg.webp' type('image/webp')
+);">
+  <div class="container">
+    <div class="question__wrapper question__wrapper--success">
+      <h2 class="question__title">Спасибо за заявку!</h2>
+      <p class="question__subtitle">Наш специалист свяжется с вами в течение 15 минут
+      </p>
+    </div>
+  </div>
+</section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
